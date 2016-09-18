@@ -1,0 +1,33 @@
+// ----------------------
+// Custom global variables
+// ----------------------
+mq-desktop = 'screen and (min-width: 800px)'
+mq-tablet = 'screen and (max-width: 799px) and (min-width: 500px)'
+mq-mobile = 'screen and (max-width: 499px)'
+
+mq-below-desktop = 'screen and (max-width: 900px)'
+mq-below-tablet = 'screen and (max-width: 640px)'
+
+roboto = 'Roboto Slab'
+os = 'Open Sans'
+ss = 'Source Sans Pro'
+aw = 'FontAwesome'
+
+gutter = 20px
+
+// ----------------------
+// custom function
+// ----------------------
+
+placeholder2()
+  &::-webkit-input-placeholder
+    {block}
+  &:-moz-placeholder
+    {block}
+  &::-moz-placeholder
+    {block}
+  &:-ms-input-placeholder
+    {block}
+
+frac2perc(n)
+  return (n*100)%

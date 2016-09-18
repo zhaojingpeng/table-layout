@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+    <!-- Responsive Blocks -->
+    <section class="Responsive">
+      <div class="inner">
+          <div class="row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <div class="row">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </div>
+      </div>
+    </section>
+    
+
+    <!-- Offset -->
+    <section class="Offset">
+      <div class="inner">
+        <div class="row">
+        <div>1</div>
+        <div>2</div>
+        <div>2</div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Nesting -->
+    <section class="Nesting">
+      <div class="inner">
+        <div class="row">
+          <div>a</div>
+          <div>a</div>
+          <div>
+            <div class="inner">
+              <div>
+                <div>b</div>
+                <div>b</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alignment -->
+    <section class="Alignment">
+      <div class="row">
+        <div>1</div>
+      </div>
+    </section>
+
+    <!-- Cycle -->
+    <section class="Cycle">
+    <div class="inner">
+        <div class="row">
+          <div>1 - Lorem ipsum dolor sit amet,consectetur adipisicing elit. Dolorem rem nam dolore repellendus provident, voluptas necessitatibus vel cupiditate delectus, doloremque incidunt accusantium quia! Nisi molestiae totam natus, in assumenda accusantium.
+          </div>
+          <div>
+            2 - Lorem ipsum dolor sit amet.
+          </div>
+          <div>
+            3 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. At sunt harum ut rerum id quae voluptas velit iusto quasi distinctio.
+          </div>
+        </div>
+        <div class="row">
+          <div>
+            4 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, sequi?
+          </div>
+          <div>
+            5 - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nisi deserunt, dolorem accusamus sint ipsam dolor quae ab animi assumenda architecto placeat possimus fugit doloribus vel, corporis amet aliquam maiores!
+          </div>
+          <div>
+            6 - Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </div>
+        </div>
+    </div>
+      
+    </section>
+
+    <!-- Vertical Grid -->
+    <section class="Vertical">
+    <div class="inner">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    </section>
+
+    <!-- Waffle Grid -->
+    <section class="Waffle">
+      <div class="inner">
+          <div class="row">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+          </div>
+          <div class="row">
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </div>
+          <div class="row">
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+          </div>
+          <div class="row">
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+          </div>
+          <div class="row">
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+          </div>
+      </div>
+      
+    </section>
+
+    <!-- Varying Sizes -->
+    <section class="Varying">
+      <div class="inner">
+        <div class="row">
+          <div style="width: 33%">1</div>
+          <div>2</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Source Ordering -->
+    <section class="Source">
+      <div class="inner">
+        <div class="row">
+          <div>1</div>
+          <div>2</div>
+        </div>
+      </div>
+    </section>
+{% endblock %}

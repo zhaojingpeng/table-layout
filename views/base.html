@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+  {{ site_head() }}
+</head>
+<body class="{% block site_class %}{% endblock %}">
+  <div class="wrapper">
+    {% include 'includes/header.html' %}
+    {% block content %}{% endblock %}
+    {% include 'includes/footer.html' %}
+  </div>
+  {{ site_footer() }}
+</body>
+</html>

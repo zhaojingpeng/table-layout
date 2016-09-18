@@ -1,0 +1,137 @@
+site-table()
+  display table
+  width 100%
+  border-collapse:separate
+  border-spacing:30px 15px
+  margin 0
+
+wrap()
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow hidden
+  .inner
+    height: auto;
+    line-height: auto;
+    text-align: center;
+    margin 0 -30px
+
+.Responsive
+  wrap()
+  .row
+    site-table()
+    background-color #42cafd
+    div
+      display table-cell
+      background-color darken(#42cafd, 10%)
+      margin-right 30px
+      @media mq-tablet
+        display block
+        width 100%
+
+.Offset
+  wrap()
+  .row
+    background-color #66b3ba
+    site-table()
+    div
+      display table-cell
+      background-color darken(#66b3ba, 10%)
+      &:nth-of-type(2)
+        visibility hidden
+      
+.Nesting
+  wrap()
+  .row
+    background-color #8eb19d
+    site-table()
+    > div
+      display table-cell
+      background-color darken(#8eb19d, 10%)
+      &:last-child
+        width 360px
+        .inner > div
+          site-table()
+          border-spacing:30px 0px
+          > div
+            background-color #68977c
+            display table-cell
+        // > div
+        //   display flex
+        //   align-items flex-start
+        //   justify-content space-between
+        //   margin 0
+        //   > div
+        //     margin 0
+        //     width calc((100% - 30px) * 1/2)
+        //     background-color #68977c
+
+.Alignment
+  .row
+    background-color #f0d2d1
+    site-table()
+    border-spacing:400px 100px
+    > div
+      display table-cell
+      background-color #e5b1af
+
+.Cycle
+  wrap()
+  .row
+    background-color #f19a3e
+    site-table()
+    table-layout: fixed
+    margin 0
+    div
+      display table-cell
+      background-color #ef8b22
+      text-align left
+      line-height 24px
+      max-width 340px
+      
+.Vertical
+  wrap()
+  .inner
+    margin -45px 0
+    background-color #1e90ff
+    border-spacing:0px 30px
+    div
+      display table
+      size 100% 160px
+      line-height 160px
+      background-color #0182ff
+      margin-bottom 30px
+
+.Waffle
+  wrap()
+  .inner
+    margin -45px -30px
+  .row
+    background-color #ff6347
+    site-table()
+    border-spacing 30px 15px
+    margin 0
+    div
+      display table-cell
+      background-color #ff4726
+
+.Varying
+  wrap()
+  .row
+    background-color #00ff7f
+    site-table()
+    table-layout fixed
+    div
+      display table-cell
+      background-color #00e672
+
+.Source
+  wrap()
+  .row
+    background-color #5f9ea0
+    site-table()
+    div
+      display table-cell
+      background-color #568e90
